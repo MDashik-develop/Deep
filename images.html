@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine - Images</title>
+
+    <link rel="stylesheet" href="asset/styles/css/header-footer.css">
+    <link rel="stylesheet" href="asset/styles/css/result-images-style.css">
+        <!-- Bootstrap CDN -->
+    <link href="asset/styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<!--  start sidebar menu -->
+<div id="sidebar-div" class="sidebar-div">
+    <div class="sidebar-search">
+        <input type="text" placeholder="Search items..">
+        <img src="asset/upload/icon/search.svg" width="25" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>News Manager <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>AI Chat <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/trending.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/search.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+        </ul>
+    </nav>
+</div>
+<!--  end sidebar menu -->
+<div class="main-result-page">
+    <header class="header-div d-flex flex-column">
+        <!--start search-div-->
+        <div class="search-div">
+            <div class="logo">
+                <h2 onclick="window.location.href='index.html'">Deepde!</h2>
+                <ul class="short-menu">
+                    <li><a href=""><img src="asset/upload/icon/user.svg" alt="">Login</a></li>
+                    <li><a href=""><img src="asset/upload/icon/flag-bd.svg" alt=""></a></li>
+                    <!-- Change href to prevent page reload -->
+                    <li class="menus-icon"><a href="javascript:void(0);"><img src="asset/upload/icon/menu-alt.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="search-fild flex-grow-1 d-flex">
+                <div class="search-nav d-flex">
+                    <form class="search">
+                        <input type="text" name="search" id="search-input" placeholder="Search here...." autocomplete="off">
+                        <input class="d-none" type="submit">
+                        <img src="asset/upload/icon/voice.svg" width="25" alt="">
+                        <img src="asset/upload/icon/search.svg" width="25" alt="">
+                        <ul id="suggestions" class="suggestions-list"></ul>
+                    </form>
+                    <ul class="short-menu">
+                        <li><a href=""><img src="asset/upload/icon/user.svg" alt="">Login</a></li>
+                        <li><a href=""><img src="asset/upload/icon/flag-bd.svg" alt=""></a></li>
+                        <li class="menus-icon"><a href="javascript:void(0);"><img src="asset/upload/icon/menu-alt.svg" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+                <a class="setting" href=""><img src="asset/upload/icon/setting.svg" width="15" alt=""> Setting</a>
+            </div>
+        </div>
+        <!--end search-div-->
+        <!--start search-typ -->
+        <div class="search-type">
+            <nav>
+                <ul>
+                    <li><a href="result.html"><img src="asset/upload/icon/search.svg" alt="">Web</a></li>
+                    <li class="active-type"><a href="images.html"><img src="asset/upload/icon/img.svg" alt="">Images</a></li>
+                    <li><a href="videos.html"><img src="asset/upload/icon/video.svg" alt="">Videos</a></li>
+                    <li><a href="news.html"><img src="asset/upload/icon/news.svg" alt="">News</a></li>
+                    <li><a href="apps.html"><img src="asset/upload/icon/apps.svg" alt="">Apps</a></li>
+                    <li><a href=""><img src="asset/upload/icon/location.svg" alt="">Locations</a></li>
+                </ul>
+            </nav>
+            <a class="tool" href=""><img src="asset/upload/icon/setting.svg" alt=""></a>
+        </div>
+        <!--end search-typ -->
+    </header>
+    <!--start result-main-div-->
+    <div class="result-div">
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+        <div class="images">
+            <a href="">
+                <div class="images-top">
+                    <img class="result-img" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                </div>
+                <div class="images-down">
+                    <p><img class="result-fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> www.deepde.com/search/images/</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, incidunt.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--end result-main-div-->
+    <!-- start Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2024 Deepde. All rights reserved</p>
+            <p class="setting-small"><a href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+        </div>
+        <ul>
+            <li><a href="">help</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Dashboard</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">About ads</a></li>
+            <li><a href="">About this page</a></li>
+        </ul>
+        <p><a class="setting-big" href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+    </footer>
+    <!-- end Footer -->
+</div>
+<!-- Bootstrap JS -->
+<script src="asset/styles/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="asset/styles/js/script.js"></script>
+<script>
+    /****************** start search suggestbar ******************/
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('search-input');
+        const suggestionsList = document.getElementById('suggestions');
+    
+        // search suggestions topics
+        const suggestions = ['Bangladesh', 'India', 'Shakib Al Hasan', 'Sheikh Hasina', 'Deepde', 'Bongobondu'];
+    
+        const commonImagePath = 'asset/upload/icon/search.svg';
+    
+        searchInput.addEventListener('input', function() {
+            const inputValue = searchInput.value.toLowerCase();
+            suggestionsList.innerHTML = '';
+    
+            if (inputValue) {
+                const filteredSuggestions = suggestions.filter(item =>
+                    item.toLowerCase().includes(inputValue)
+                );
+    
+                if (filteredSuggestions.length > 0) {
+                    filteredSuggestions.forEach((item, index) => {
+                        const li = document.createElement('li');
+    
+                        const img = document.createElement('img');
+                        img.src = commonImagePath;
+                        img.alt = item;
+    
+                        const span = document.createElement('span');
+                        span.textContent = item;
+    
+                        li.appendChild(img);
+                        li.appendChild(span);
+                        li.dataset.index = index;
+    
+                        suggestionsList.appendChild(li);
+                    });
+                    suggestionsList.style.display = 'block';
+                } else {
+                    suggestionsList.style.display = 'none';
+                }
+            } else {
+                suggestionsList.style.display = 'none';
+            }
+        });
+    
+        searchInput.addEventListener('keydown', function(event) {
+            const activeItem = suggestionsList.querySelector('.active');
+            let nextItem;
+    
+            if (event.key === 'ArrowDown') {
+                if (!activeItem) {
+                    nextItem = suggestionsList.querySelector('li');
+                } else {
+                    nextItem = activeItem.nextElementSibling;
+                    activeItem.classList.remove('active');
+                }
+                if (nextItem) {
+                    nextItem.classList.add('active');
+                    searchInput.value = nextItem.textContent;
+                }
+            } else if (event.key === 'ArrowUp') {
+                if (activeItem) {
+                    nextItem = activeItem.previousElementSibling;
+                    activeItem.classList.remove('active');
+                    if (nextItem) {
+                        nextItem.classList.add('active');
+                        searchInput.value = nextItem.textContent;
+                    }
+                }
+            } else if (event.key === 'Enter') {
+                if (activeItem) {
+                    searchInput.value = activeItem.textContent;
+                    suggestionsList.style.display = 'none';
+                }
+            }
+        });
+    
+        suggestionsList.addEventListener('click', function(event) {
+            if (event.target.tagName === 'LI' || event.target.tagName === 'SPAN' || event.target.tagName === 'IMG') {
+                const li = event.target.closest('li');
+                searchInput.value = li.querySelector('span').textContent;
+                suggestionsList.style.display = 'none';
+            }
+        });
+    });
+    /****************** end search suggestbar ******************/
+    
+    </script>
+</body>
+</html>

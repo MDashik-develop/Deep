@@ -1,0 +1,86 @@
+
+:root{
+    --w-thumbline: 190px;
+    --h-thumbline: 130px;
+    --fs-news-title-h4: 17px;
+    --d-news-title-span: -webkit-box;
+
+}
+.result-div{
+    padding-left: var(--pl-srch-type);
+    padding-right: var(--pr-srch-type);
+    padding-top: 10px;
+}
+.news-card{
+    a{
+        max-height: 165px;
+        text-decoration: none;
+        display: flex;
+        padding: 15px;
+        border: var(--bdr);
+        border-radius: 15px;
+        margin-top: 10px;
+        gap: 10px;
+        .thumbline{
+            width: var(--w-thumbline);
+            height: var(--h-thumbline);
+
+        }
+        .news-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 6px;
+            p{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 13px;
+                color: grey;
+                margin: 0;
+                img{
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+        .news-title{
+            flex-grow: 1;
+            h4{
+                font-size: var(--fs-news-title-h4);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+
+            }
+            span{
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.808);
+                display: var(--d-news-title-span);
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                line-height: 1.2em;
+                max-height: 2.4em; 
+                text-overflow: ellipsis;
+            }
+        }
+        
+    }
+}
+/*************** start view friendy responsive **************/
+
+/* start mobile view (up to 520px) */
+@media (max-width: 520px) {
+    :root{
+        --w-thumbline: 145px;
+        --h-thumbline: 98px;
+        --fs-news-title-h4: 14.5px;
+        --d-news-title-span: none;
+        
+    }
+   }
+
+/*************** end view friendy responsive **************/

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine - Result</title>
+
+    <link rel="stylesheet" href="asset/styles/css/header-footer.css">
+    <link rel="stylesheet" href="asset/styles/css/result-mian-style.css">
+    <!-- Bootstrap CDN -->
+    <link href="asset/styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+</head>
+<body>
+<!--  start sidebar menu -->
+<div id="sidebar-div" class="sidebar-div">
+    <div class="sidebar-search">
+        <input type="text" placeholder="Search items..">
+        <img src="asset/upload/icon/search.svg" width="25" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>News Manager <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>AI Chat <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/trending.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/search.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+        </ul>
+    </nav>
+</div>
+<!--  end sidebar menu -->
+<div class="main-result-page">
+    <header class="header-div d-flex flex-column">
+        <!--start search-div-->
+        <div class="search-div">
+            <div class="logo">
+                <h2 onclick="window.location.href='index.html'">Deepde!</h2>
+                <ul class="short-menu">
+                    <li><a href=""><img src="asset/upload/icon/user.svg" alt="">Login</a></li>
+                    <li><a href=""><img src="asset/upload/icon/flag-bd.svg" alt=""></a></li>
+                    <li class="menus-icon"><a href="javascript:void(0);"><img src="asset/upload/icon/menu-alt.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="search-fild flex-grow-1 d-flex">
+                <div class="search-nav d-flex">
+                    <form class="search">
+                        <input type="text" name="search" id="search-input" placeholder="Search here...." autocomplete="off">
+                        <input class="d-none" type="submit">
+                        <img src="asset/upload/icon/voice.svg" width="25" alt="">
+                        <img src="asset/upload/icon/search.svg" width="25" alt="">
+                        <ul id="suggestions" class="suggestions-list"></ul>
+                    </form>
+                    <ul class="short-menu">
+                        <li><a href=""><img src="asset/upload/icon/user.svg" alt="">Login</a></li>
+                        <li><a href=""><img src="asset/upload/icon/flag-bd.svg" alt=""></a></li>
+                        <li class="menus-icon"><a href="javascript:void(0);"><img src="asset/upload/icon/menu-alt.svg" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+                <a class="setting" href=""><img src="asset/upload/icon/setting.svg" width="15" alt=""> Setting</a>
+            </div>
+        </div>
+        <!--end search-div-->
+        <!--start search-typ -->
+        <div class="search-type">
+            <nav>
+                <ul>
+                    <li class="active-type"><a href="#"><img src="asset/upload/icon/search.svg" alt="">Web</a></li>
+                    <li><a href="images.html"><img src="asset/upload/icon/img.svg" alt="">Images</a></li>
+                    <li><a href="videos.html"><img src="asset/upload/icon/video.svg" alt="">Videos</a></li>
+                    <li><a href="news.html"><img src="asset/upload/icon/news.svg" alt="">News</a></li>
+                    <li><a href="apps.html"><img src="asset/upload/icon/apps.svg" alt="">Apps</a></li>
+                    <li><a href=""><img src="asset/upload/icon/location.svg" alt="">Locations</a></li>
+                </ul>
+            </nav>
+            <a class="tool" href=""><img src="asset/upload/icon/setting.svg" alt=""></a>
+        </div>
+        <!--end search-typ -->
+    </header>
+    <!--start result-main-div-->
+    <div class="result-main-div">
+        <div class="result-fild">
+            <!--start ads-->
+            <div class="ads-dev">
+                <a class="ads-1st" href="">
+                    <div class="ads-top" href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                        <h4>Get Your Custom Logo Design</h4>
+                        <p>342KO</p>
+                    </div>
+                    <div class="ads-middle" href="">
+                        <span><strong>AD </strong> WWW.Deepde.com/search/websearch/websearch/websearch/websearch/websearch/web</span>
+                        <p>This site can track you</p>
+                    </div>
+                    <div href="" class="ads-down">
+                        <span>Create a Custom Logo Design today and Customize it so it Matches Your Style.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="ads-dev">
+                <a class="ads-1st" href="">
+                    <div class="ads-top" href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                        <h4>Get Your Custom Logo Design, Your Custom Logo Design Your Custom Logo Design</h4>
+                        <p>342KO</p>
+                    </div>
+                    <div class="ads-middle" href="">
+                        <span><strong>AD </strong> WWW.Deepde.com/search/web</span>
+                        <p>This site can track you</p>
+                    </div>
+                    <div href="" class="ads-down">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex placeat sed inventore maiores culpa optio unde perferendis. Totam repellendus corporis, iste cumque provident assumenda vitae repudiandae nulla odio cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi vitae ad sapiente eum possimus, ullam cupiditate nemo voluptate iure rem natus ipsum consequuntur cum, deleniti, saepe nesciunt magnam minus.</span>
+                    </div>
+                </a>
+            </div>
+            <!--end ads-->
+
+            <!--start ads bottom space-->
+            <div class="ads-space">
+                Ads by Deepde (Privacy)
+            </div>
+            <!--end ads bottom space-->
+
+            <!--start result space-->
+            <div class="result-div">
+                <div class="result-dev">
+                    <a class="result-1st" href="">
+                        <div class="result-top" href="">
+                            <div class="result-details">
+                                <img class="fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                                <div>
+                                    <p>Microsoft <img src="asset/upload/icon/verify.svg" alt=""></p>
+                                    <div class="result-link">
+                                        <span>www.Deepde.com/semhbcjskdba .a sdbsdig/a.; g;sdsd ug/'ishdishdjkhgiewrgbuctguiwegrfiugewrauiwegf' arch/web</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-middle" href="">
+                            <h4>Get Your Custom Logo Design</h4>
+                        </div>
+                        <div href="" class="result-down">
+                            <span>Create a Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus possimus laudantium voluptatum sequi, dolorem minima! Ex voluptatem neque et!bhd  hd shs d Custom Logo Design today and Customize it so it Matches Your Style.</span>
+                        </div>
+                        <!-- start business cards -->
+                        <div class="result-business-cards">
+                            <div class="business-cards-right">
+                                <div class="left-right">
+                                    <h4>Deepde</h4>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sed molestiae animi praesentium debitis eos vero, a, error unde, beatae facilis. Iure, laudantium. Excepturi nobis autem quas officia ipsa eius?</span>
+                                </div>
+                                <div class="left-right">
+                                    <h4>Deepde</h4>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sed molestiae animi praesentium debitis eos vero, a, error unde, beatae facilis. Iure, laudantium. Excepturi nobis autem quas officia ipsa eius?</span>
+                                </div>
+                            </div>
+                            <div class="business-cards-left">
+                                <div class="left-right">
+                                    <h4>Deepde</h4>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sed molestiae animi praesentium debitis eos vero, a, error unde, beatae facilis. Iure, laudantium. Excepturi nobis autem quas officia ipsa eius?</span>
+                                </div>
+                                <div class="left-right">
+                                    <h4>Deepde</h4>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sed molestiae animi praesentium debitis eos vero, a, error unde, beatae facilis. Iure, laudantium. Excepturi nobis autem quas officia ipsa eius?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end business cards -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- start apps card slid-->
+             <div class="apps-slider-main-div">
+                <h2> <img src="asset/upload/icon/apps.svg" alt="">Applications</h2>
+                <div class="slider-btn">
+                    <img onclick="mvlaps()" src="asset/upload/icon/arrow-left.svg" width="30x" alt="">
+                    <img onclick="mvraps()" src="asset/upload/icon/arrow-right.svg" width="30" alt="">
+                </div>
+                <div class="app-slider">
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://cdn-icons-png.flaticon.com/512/732/732221.png');"></div>
+                                <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>Microshoft</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s');"></div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>Facebook</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/800px-Facebook_Messenger_logo_2020.svg.png');"></div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/800px-Facebook_Messenger_logo_2020.svg.png" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>Messanger</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg');"></div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>Instagram</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://freepnglogo.com/images/all_img/1725374683twitter-x-logo.png');"></div>
+                                <img src="https://freepnglogo.com/images/all_img/1725374683twitter-x-logo.png" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>twitter - X</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="">
+                            <div class="app-card-top">
+                                <div class="background-blur" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s');"></div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="">
+                            </div>                            
+                            <div class="app-card-down">
+                                <h5>Linkdlne</h5>
+                                <section><p>4.5 <img src="asset/upload/icon/star.svg" alt=""></p><span>Free</span></section>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+             </div>
+            <!-- end apss card slid-->
+
+            <div class="result-div">
+                <div class="result-dev">
+                    <a class="result-1st" href="">
+                        <div class="result-top" href="">
+                            <div class="result-details">
+                                <img class="fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                                <div>
+                                    <p>Microsoft <img src="asset/upload/icon/verify.svg" alt=""></p>
+                                    <div class="result-link">
+                                        <span>www.Deepde.com/semhbcjskdba .a sdbsdig/a.; g;sdsd ug/'ishdishdjkhgiewrgbuctguiwegrfiugewrauiwegf' arch/web</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-middle" href="">
+                            <h4>Get Your Custom Logo Design. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at error adipisci modi? Animi exercitationem quaerat nemo officiis fugiat, nobis molestias, quas inventore deserunt autem unde. Impedit tempore harum enim?</h4>
+                        </div>
+                        <div href="" class="result-down">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente error recusandae deserunt quos pariatur neque totam repudiandae placeat, rerum, ipsam nostrum impedit doloribus atque autem distinctio iste explicabo animi optio? ing elit. Harum ea cumque quia possimus nemo deleniti eligendi id blanditiis natus atque, perferendis dolorem, quis qui corporis officia quasi, aspernatur est velit. Accusamus repellat expedita eveniet dolorum, commodi perferendis esse pariatur dolore laborum! Asperiores eveniet suscipit rerum sapiente, iure optio aliquid illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium mollitia minus quae error odio ex dolore libero ipsa voluptate.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- start video card slid-->
+            <div class="video-slider-main-dev">
+                <h2> <img src="asset/upload/icon/video-library.svg" alt="">Videos</h2>
+                <div class="slider-btn">
+                    <img onclick="moveLeft()" src="asset/upload/icon/arrow-left.svg" width="30x" alt="">
+                    <img onclick="moveRight()" src="asset/upload/icon/arrow-right.svg" width="30" alt="">
+                </div>
+                <div class="video-slider" id="video-slider">
+                    <div class="video-card">
+                        <a href="">
+                            <div style="background: url('https://imgs.search.brave.com/AS5tXMLeDyescoLq9icQdfs9eP3YqHL8ILNMXrGphjg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8z/ZVhpTHBGM3hFWS9o/cWRlZmF1bHQuanBn');">
+                                <img src="asset/upload/icon/play-button.svg" alt="">
+                            </div>
+                            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXuT6ZioJitZrQPXq3fHEdrWa8p3-yczjJDSUAW2V-NjIzIU&s" alt="">youtube.com</p>
+                            <div>
+                                <span>Cats really think about what people say🐱 Funny CAT Video 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="">
+                            <div style="background: url('https://imgs.search.brave.com/bUMHzmkBdCkvOXXtlEbINeqDZTGsb_LgA5thyP26PNg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS82/X1B5OUlOQTRsRS9o/cWRlZmF1bHQuanBn');">
+                                <img src="asset/upload/icon/play-button.svg" alt="">
+                            </div>
+                            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXuT6ZioJitZrQPXq3fHEdrWa8p3-yczjJDSUAW2V-NjIzIU&s" alt="">youtube.com</p>
+                            <div>
+                                <span>Cats really think about what people say🐱 Funny CAT Video 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="">
+                            <div style="background: url('https://imgs.search.brave.com/AS5tXMLeDyescoLq9icQdfs9eP3YqHL8ILNMXrGphjg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8z/ZVhpTHBGM3hFWS9o/cWRlZmF1bHQuanBn');">
+                                <img src="asset/upload/icon/play-button.svg" alt="">
+                            </div>
+                            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXuT6ZioJitZrQPXq3fHEdrWa8p3-yczjJDSUAW2V-NjIzIU&s" alt="">youtube.com</p>
+                            <div>
+                                <span>Cats really think about what people say🐱 Funny CAT Video 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="">
+                            <div style="background: url('https://imgs.search.brave.com/AS5tXMLeDyescoLq9icQdfs9eP3YqHL8ILNMXrGphjg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8z/ZVhpTHBGM3hFWS9o/cWRlZmF1bHQuanBn');">
+                                <img src="asset/upload/icon/play-button.svg" alt="">
+                            </div>
+                            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXuT6ZioJitZrQPXq3fHEdrWa8p3-yczjJDSUAW2V-NjIzIU&s" alt="">youtube.com</p>
+                            <div>
+                                <span>Cats really think about what people say🐱 Funny CAT Video 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="">
+                            <div style="background: url('https://imgs.search.brave.com/AS5tXMLeDyescoLq9icQdfs9eP3YqHL8ILNMXrGphjg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8z/ZVhpTHBGM3hFWS9o/cWRlZmF1bHQuanBn');">
+                                <img src="asset/upload/icon/play-button.svg" alt="">
+                            </div>
+                            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXuT6ZioJitZrQPXq3fHEdrWa8p3-yczjJDSUAW2V-NjIzIU&s" alt="">youtube.com</p>
+                            <div>
+                                <span>Cats really think about what people say🐱 Funny CAT Video 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end video card slid-->
+
+            <div class="result-div">
+                <div class="result-dev">
+                    <a class="result-1st" href="">
+                        <div class="result-top" href="">
+                            <div class="result-details">
+                                <img class="fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                                <div>
+                                    <p>Microsoft <img src="asset/upload/icon/verify.svg" alt=""></p>
+                                    <div class="result-link">
+                                        <span>www.Deepde.com/semhbcjskdba .a sdbsdig/a.; g;sdsd ug/'ishdishdjkhgiewrgbuctguiwegrfiugewrauiwegf' arch/web</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-middle" href="">
+                            <h4>Get Your Custom Logo Design</h4>
+                        </div>
+                        <div href="" class="result-down">
+                            <span>Create a Custom Logo Design today and Customize it so it Matches Your Style.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- start result Maps-->
+            <div class="result-maps-div">
+                <h2> <img src="asset/upload/icon/location.svg" alt="">Locations</h2>
+                <!-- Embed Google Map using iframe () -->
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.305890041846!2d39.8262!3d21.4225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c4e9b172017d8d%3A0x93fcf6293d85a9cb!2sMasjid%20al-Haram!5e0!3m2!1sen!2sus!4v1633648192298!5m2!1sen!2sus" 
+        
+                allowfullscreen
+                loading="lazy">
+                </iframe>
+            </div>
+            <!-- end result Maps-->
+            <div class="result-div">
+                <div class="result-dev">
+                    <a class="result-1st" href="">
+                        <div class="result-top" href="">
+                            <div class="result-details">
+                                <img class="fav" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+                                <div>
+                                    <p>Microsoft <img src="asset/upload/icon/verify.svg" alt=""></p>
+                                    <div class="result-link">
+                                        <span>www.Deepde.com/semhbcjskdba .a sdbsdig/a.; g;sdsd ug/'ishdishdjkhgiewrgbuctguiwegrfiugewrauiwegf' arch/web</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-middle" href="">
+                            <h4>Get Your Custom Logo Design</h4>
+                        </div>
+                        <div href="" class="result-down">
+                            <span>Create a Custom Logo Design today and Customize it so it Matches Your Style.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!------------
+              Result here
+            ------------->
+        </div>
+        <!--end result space-->
+
+        <!-- start result infobox-->
+        <div class="result-infobox-main">
+            <div class="infobox-top">
+                <a href="">
+                    <h1>Development</h1>
+                    <h2>Development is good for us</h2>
+                </a>
+                <a href="">
+                    <img src="data:image/png;base64,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" alt="">
+                </a>
+            </div>
+            <div class="infobox-middle">
+                <a href="">
+                   <div>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum nisi atque quam sapiente, velit eius, nihil neque iste eligendi aspernatur magnam optio inventore officia accusamus laudantium quaerat. A molestiae atque qui reiciendis, nisi nostrum provident nesciunt, accusamus commodi distinctio ex odit et, asperiores porro est iusto pariatur itaque repellat.
+                   </div>
+                </a>
+                <a href="">Wikipedia</a>
+            </div>
+            <div class="infobox-down">
+                <span>Profile</span>
+                <div>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt=""> Microsoft</a>
+                </div>
+            </div>
+            <div class="infobox-down-feedback">
+                <a href="">Data form Wikipedia</a>
+                <a href="">feedback</a>
+            </div>
+        </div>
+        <!-- end result infobox-->
+    </div>
+    <!--end result-main-dev-->
+    <!-- start Pagination -->
+    <div class="Pagination-div">
+        <ul>
+            <li><a href=""><img src="asset/upload/icon/arrow-left.svg" alt=""></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href=""><img src="asset/upload/icon/arrow-right.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- end Pagination -->
+    <!-- start Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2024 Deepde. All rights reserved</p>
+            <p class="setting-small"><a href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+        </div>
+        <ul>
+            <li><a href="">help</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Dashboard</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">About ads</a></li>
+            <li><a href="">About this page</a></li>
+        </ul>
+        <p><a class="setting-big" href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+    </footer>
+    <!-- end Footer -->
+</div>
+<!-- Bootstrap JS -->
+<script src="asset/styles/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="asset/styles/js/script.js"></script>
+<script>
+/****************** start search suggestbar ******************/
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const suggestionsList = document.getElementById('suggestions');
+
+    // search suggestions topics
+    const suggestions = ['Bangladesh', 'India', 'Shakib Al Hasan', 'Sheikh Hasina', 'Deepde', 'Bongobondu'];
+
+    const commonImagePath = 'asset/upload/icon/search.svg';
+
+    searchInput.addEventListener('input', function() {
+        const inputValue = searchInput.value.toLowerCase();
+        suggestionsList.innerHTML = '';
+
+        if (inputValue) {
+            const filteredSuggestions = suggestions.filter(item =>
+                item.toLowerCase().includes(inputValue)
+            );
+
+            if (filteredSuggestions.length > 0) {
+                filteredSuggestions.forEach((item, index) => {
+                    const li = document.createElement('li');
+
+                    const img = document.createElement('img');
+                    img.src = commonImagePath;
+                    img.alt = item;
+
+                    const span = document.createElement('span');
+                    span.textContent = item;
+
+                    li.appendChild(img);
+                    li.appendChild(span);
+                    li.dataset.index = index;
+
+                    suggestionsList.appendChild(li);
+                });
+                suggestionsList.style.display = 'block';
+            } else {
+                suggestionsList.style.display = 'none';
+            }
+        } else {
+            suggestionsList.style.display = 'none';
+        }
+    });
+
+    searchInput.addEventListener('keydown', function(event) {
+        const activeItem = suggestionsList.querySelector('.active');
+        let nextItem;
+
+        if (event.key === 'ArrowDown') {
+            if (!activeItem) {
+                nextItem = suggestionsList.querySelector('li');
+            } else {
+                nextItem = activeItem.nextElementSibling;
+                activeItem.classList.remove('active');
+            }
+            if (nextItem) {
+                nextItem.classList.add('active');
+                searchInput.value = nextItem.textContent;
+            }
+        } else if (event.key === 'ArrowUp') {
+            if (activeItem) {
+                nextItem = activeItem.previousElementSibling;
+                activeItem.classList.remove('active');
+                if (nextItem) {
+                    nextItem.classList.add('active');
+                    searchInput.value = nextItem.textContent;
+                }
+            }
+        } else if (event.key === 'Enter') {
+            if (activeItem) {
+                searchInput.value = activeItem.textContent;
+                suggestionsList.style.display = 'none';
+            }
+        }
+    });
+
+    suggestionsList.addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI' || event.target.tagName === 'SPAN' || event.target.tagName === 'IMG') {
+            const li = event.target.closest('li');
+            searchInput.value = li.querySelector('span').textContent;
+            suggestionsList.style.display = 'none';
+        }
+    });
+});
+/****************** end search suggestbar ******************/
+</script>
+
+</body>
+</html>

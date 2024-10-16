@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Gradient from Image Colors</title>
+    <style>
+        .app-card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Change to vh for better responsiveness */
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); /* Default Gradient */
+}
+
+.app-card-top img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 1; /* Keeps the image on top of the background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Black glow shadow around the image */
+    border-radius: 8px; /* Optional: Makes the image corners rounded */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="app-card-top">
+        <img id="source-image" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="">
+    </div>
+    
+
+<script>
+    const img = document.getElementById('source-image');
+
+img.onload = function() {
+    // Create a temporary element to get the computed style
+    const tempDiv = document.createElement('div');
+    tempDiv.style.backgroundImage = `url(${img.src})`;
+    tempDiv.style.width = '80px';
+    tempDiv.style.height = '80px';
+    tempDiv.style.position = 'absolute';
+    tempDiv.style.opacity = '0';
+    document.body.appendChild(tempDiv);
+
+    // Use getComputedStyle to access the background image
+    const computedStyle = getComputedStyle(tempDiv);
+    const bgImage = computedStyle.backgroundImage;
+
+    // Remove the temporary div
+    document.body.removeChild(tempDiv);
+
+    // Set the background gradient using the image's color (default colors here)
+    // Replace these colors with your logic to extract colors from the image if needed
+    document.querySelector('.app-card-top').style.background = `linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5))`; // Example gradient
+};
+
+// Trigger the image load
+img.src = img.src; // Force reloading the image
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+
+    <link rel="stylesheet" href="asset/styles/css/search-style.css">
+        <!-- Bootstrap -->
+    <link href="asset/styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--  start sidebar menu -->
+<div id="sidebar-div" class="sidebar-div">
+    <div class="sidebar-search">
+        <input type="text" placeholder="Search items..">
+        <img src="asset/upload/icon/search.svg" width="25" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>News Manager <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>AI Chat <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/trending.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/search.svg" alt=""><span>Search type <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/news.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/weather.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+            <li><a href="#"><img src="asset/upload/icon/voice.svg" alt=""><span>Ai Image Generator <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem?</p></span></a></li>
+        </ul>
+    </nav>
+</div>
+<!--  end sidebar menu -->
+
+<div class="main d-flex flex-column justify-content-between">
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <h2>Deepde!</h2>
+            </div>
+            <ul class="menu">
+                <li class="menus-icon"><img src="asset/upload/icon/menu-dots.svg" width="25" alt=""></li>
+                <li class="weather"><img src="asset/upload/icon/weather.svg" height="27" alt=""><span>28'C <br><p>satellite</p></span></li>
+                <li class="my-account"><img src="asset/upload/icon/user-circle.svg" width="25" alt="">My Account</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- satat middle space -->
+     <div class="middle-div flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="time">Good Morning!</h1>
+        <span class="date">Friday, Octobor 20, 2024</span>
+        <!-- form -->
+        <form action="">
+            <div class="search-div" style="position: relative;">
+                <img src="asset/upload/icon/search.svg" alt="">
+                <input type="text" name="search" id="search-input" placeholder="Search here...." autocomplete="off">
+                <img src="asset/upload/icon/voice.svg" alt="">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+            <div class="submit-div">
+                <input class="submit-search" value="Search" type="submit">
+                <button>Search AI</button>
+            </div>
+            <div class="treanding-div">
+                <span><img src="asset/upload/icon/trending.svg"  alt="">Treanding</span>
+                <ul>
+                    <li><a href="">#Deepde</a></li>
+                    <li><a href="">#Bangladesh</a></li>
+                    <li><a href="">#India</a></li>
+                    <li><a href="">#SheikhHasina</a></li>
+                    <li><a href="">#Bongobondu</a></li>
+                    <li><a href="">#ShakibAlHassan</a></li>
+                </ul>
+            </div>
+        </form>
+        <!-- /form -->
+     </div>
+    <!-- end maddle space -->
+     <!-- start last space -->
+     <div class="last-div d-none">
+        <div class="cards-div">
+            <span>popular items</span>
+            <ul>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+                <li><a href=""><img src="asset/upload/icon/news.svg" alt=""></a></li>
+            </ul>
+        </div>
+     </div>
+     <!-- end last space -->
+     <!-- start Footer -->
+      <footer>
+        <div>
+          <p>&copy; 2024 Deepde. All rights reserved</p>
+          <p class="d-none setting-small"><a href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+        </div>
+        <ul>
+            <li><a href="">help</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Dashboard</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">About ads</a></li>
+            <li><a href="">About this page</a></li>
+        </ul>
+        <p><a class="setting-big" href=""><img src="asset/upload/icon/setting.svg" alt="">Setting</a></p>
+      </footer>
+     <!-- end Footer -->
+
+</div><!--end main-->
+<!-- Bootstrap JS -->
+<script src="asset/styles/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="asset/styles/js/script.js"></script>
+<script>
+/****************** start search suggestbar ******************/
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const suggestionsList = document.getElementById('suggestions');
+
+    // search suggestions topics
+    const suggestions = ['Bangladesh', 'India', 'Shakib Al Hasan', 'Sheikh Hasina', 'Deepde', 'Bongobondu'];
+
+    const commonImagePath = 'asset/upload/icon/search.svg';
+
+    searchInput.addEventListener('input', function() {
+        const inputValue = searchInput.value.toLowerCase();
+        suggestionsList.innerHTML = '';
+
+        if (inputValue) {
+            const filteredSuggestions = suggestions.filter(item =>
+                item.toLowerCase().includes(inputValue)
+            );
+
+            if (filteredSuggestions.length > 0) {
+                filteredSuggestions.forEach((item, index) => {
+                    const li = document.createElement('li');
+
+                    const img = document.createElement('img');
+                    img.src = commonImagePath;
+                    img.alt = item;
+
+                    const span = document.createElement('span');
+                    span.textContent = item;
+
+                    li.appendChild(img);
+                    li.appendChild(span);
+                    li.dataset.index = index;
+
+                    suggestionsList.appendChild(li);
+                });
+                suggestionsList.style.display = 'block';
+            } else {
+                suggestionsList.style.display = 'none';
+            }
+        } else {
+            suggestionsList.style.display = 'none';
+        }
+    });
+
+    searchInput.addEventListener('keydown', function(event) {
+        const activeItem = suggestionsList.querySelector('.active');
+        let nextItem;
+
+        if (event.key === 'ArrowDown') {
+            if (!activeItem) {
+                nextItem = suggestionsList.querySelector('li');
+            } else {
+                nextItem = activeItem.nextElementSibling;
+                activeItem.classList.remove('active');
+            }
+            if (nextItem) {
+                nextItem.classList.add('active');
+                searchInput.value = nextItem.textContent;
+            }
+        } else if (event.key === 'ArrowUp') {
+            if (activeItem) {
+                nextItem = activeItem.previousElementSibling;
+                activeItem.classList.remove('active');
+                if (nextItem) {
+                    nextItem.classList.add('active');
+                    searchInput.value = nextItem.textContent;
+                }
+            }
+        } else if (event.key === 'Enter') {
+            if (activeItem) {
+                searchInput.value = activeItem.textContent;
+                suggestionsList.style.display = 'none';
+            }
+        }
+    });
+
+    suggestionsList.addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI' || event.target.tagName === 'SPAN' || event.target.tagName === 'IMG') {
+            const li = event.target.closest('li');
+            searchInput.value = li.querySelector('span').textContent;
+            suggestionsList.style.display = 'none';
+        }
+    });
+});
+/****************** end search suggestbar ******************/
+
+</script>
+</body>
+</html>
